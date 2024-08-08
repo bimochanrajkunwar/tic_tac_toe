@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Creates 3 columns of 100px each */
+    grid-template-rows: repeat(3, 100px); /* Creates 3 rows of 100px each */
+    gap: 5px; /* Space between the boxes */
+}
+
+.box {
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box:hover {
+    background-color: #ddd;
+}
