@@ -1,30 +1,74 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 100px); /* Creates 3 columns of 100px each */
-    grid-template-rows: repeat(3, 100px); /* Creates 3 rows of 100px each */
-    gap: 5px; /* Space between the boxes */
+body {
+  background-color: #548687;
+  text-align: center;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
 }
 
 .box {
-    background-color: #fff;
-    border: 2px solid #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffffc7;
 }
 
-.box:hover {
-    background-color: #ddd;
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
 }
